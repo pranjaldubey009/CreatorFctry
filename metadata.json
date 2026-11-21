@@ -1,0 +1,8 @@
+{
+  "name": "CreatorFctry",
+  "description": "CreatorFctry — Content & Creator Growth Studio. One Factory. Every Format. LinkedIn personal branding, UGC content, reels, carousel design, and YouTube thumbnails.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

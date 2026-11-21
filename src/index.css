@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Antonio", sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-cream: #F3F0E8;
+  --color-ink: #171717;
+  --color-electric: #315BFF;
+  --color-burnt: #D46B45;
+}
+
+@layer base {
+  html {
+    background-color: #F3F0E8;
+    color: #171717;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #F3F0E8;
+    background-image: radial-gradient(rgba(23, 23, 23, 0.045) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+}
+
+.neo-shadow {
+  box-shadow: 4px 4px 0px #171717;
+}
+
+.neo-shadow-sm {
+  box-shadow: 3px 3px 0px #171717;
+}
+
+.neo-shadow-lg {
+  box-shadow: 6px 6px 0px #171717;
+}
+
+.neo-shadow-blue {
+  box-shadow: 4px 4px 0px #315BFF;
+}
+
+.neo-btn {
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 150ms cubic-bezier(0.16, 1, 0.3, 1), background-color 150ms ease;
+}
+
+.neo-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #171717;
+}
+
+.neo-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #171717;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
